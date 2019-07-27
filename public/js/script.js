@@ -19,7 +19,7 @@ $(function(){
             method: 'post',
             dataType: 'json',
             success: function(data){
-                $('nama').val(data.nama);
+                $('#nama').val(data.nama);
             }
         });
     });
