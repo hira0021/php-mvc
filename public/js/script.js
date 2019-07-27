@@ -1,25 +1,25 @@
 $(function(){
     
     $('.tombolTambahData').on('click', function(){
-        $("#formModalLabel").html("Tambah Data Mahasiswa");
-        $(".modal-footer button[type=submit]").html("Tambah Data");
+        $('#formModalLabel').html('Tambah Data Mahasiswa');
+        $('.modal-footer button[type=submit]').html('Tambah Data');
     });
 
     $('.tampilModalUbah').on('click', function(){
-        $("#formModalLabel").html("Ubah Data Mahasiswa");
-        $(".modal-footer button[type=submit]").html("Ubah Data");
+        $('#formModalLabel').html('Ubah Data Mahasiswa');
+        $('.modal-footer button[type=submit]').html('Ubah Data');
 
-        const id = $(this).data("id");
+        const id = $(this).data('id');
         
 
         // sama ini keknya a
         $.ajax({
-            url: "http://localhost/phpmvc/public/mahasiswa/getubah",
+            url: 'http://localhost/phpmvc/public/mahasiswa/getubah',
             data: {id : id},
-            method: "post",
-            dataType: "json",
+            method: 'post',
+            dataType: 'json',
             success: function(data){
-                $("nama").val(data.nama);
+                $('nama').val(data.nama);
             }
         });
     });
