@@ -11,6 +11,8 @@ $(function(){
 
         const id = $(this).data("id");
         
+
+        // sama ini keknya a
         $.ajax({
             url: "http://localhost/phpmvc/public/mahasiswa/getubah",
             data: {id : id},

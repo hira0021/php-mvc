@@ -40,7 +40,7 @@ class Mahasiswa extends Controller{
             }
         }
     }
-
+    // yang ini a
     public function getubah(){
         echo json_encode($this->model("Mahasiswa_model")->getMahasiswaById($_POST["id"]));
     }
