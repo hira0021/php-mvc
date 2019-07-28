@@ -13,17 +13,25 @@
             </button>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-lg-6">
             <form action="<?=BASEURL?>/mahasiswa/cari" method="post">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Cari Mahasiswa.." nama="keyword" id="keyword" autocomplete="off">
+                    <input class="form-control" placeholder="Cari Mahasiswa.." type="text" name="keyword" id="keyword" autocomplete="off">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+                        <button type="submit" class="btn btn-primary" id="tombolCari">Tambah Data</button>
                     </div>
                 </div>
             </form>
+            <!-- <form action="<?=BASEURL?>/mahasiswa/cari" method="post">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Cari Mahasiswa.." nama="keyword" id="keyword" autocomplete="off">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary" id="tombolCari">cari</button>
+                    </div>
+                </div>
+            </form> -->
         </div>
     </div>
 
@@ -38,7 +46,7 @@
                             <a href="" class="badge badge-success float-right ml-1 tampilModalUbah ubahBtn" data-toggle="modal" data-target="#formModal" data-id="<?=$mhs["id"]?>">Ubah</a> 
                             <a href="<?=BASEURL?>/mahasiswa/detail/<?=$mhs["id"]?>" class="badge badge-primary float-right ml-1">Detail</a>
                         </li>
-                    <?php endforeach;?>
+                    <?php endforeach?>
                 </ul>
         </div>
     </div>
