@@ -24,14 +24,6 @@
                     </div>
                 </div>
             </form>
-            <!-- <form action="<?=BASEURL?>/mahasiswa/cari" method="post">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Cari Mahasiswa.." nama="keyword" id="keyword" autocomplete="off">
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary" id="tombolCari">cari</button>
-                    </div>
-                </div>
-            </form> -->
         </div>
     </div>
 
